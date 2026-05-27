@@ -1,0 +1,20 @@
+# Hash commitment for swarm-benchmark-results bundle
+# Committed: 2026-05-27 UTC
+
+# tar.gz form (deterministic git archive of HEAD)
+sha256  22b00cb55922ad0a708c35119b5848e62ce5f354444d59f29fae6f2363139709  swarm-benchmark-results-c5c7b78147fe.tar.gz
+
+# zip form (deterministic git archive of HEAD)
+sha256  60cfc3d96ec7a644fedf2674730303e0d8cef63a8650e063cd04dfdeb34ece01  swarm-benchmark-results-c5c7b78147fe.zip
+
+# Underlying source tree commit (would resolve in the released repo)
+git-commit  c5c7b78147fe53c016f1eefade809fa39851e748
+
+# How to verify when the bundle is released:
+#   sha256sum swarm-benchmark-results-c5c7b78147fe.tar.gz
+# OR
+#   sha256sum swarm-benchmark-results-c5c7b78147fe.zip
+#
+# The git-commit value above will resolve to the published repo's HEAD
+# at release time, allowing a third confirmation path:
+#   git -C swarm-benchmark-results rev-parse HEAD
