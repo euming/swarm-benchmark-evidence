@@ -1,5 +1,9 @@
-# Hash commitment for swarm-benchmark-results bundle
-# Committed: 2026-05-27 UTC
+# Hash commitments for swarm benchmark evidence bundles
+
+---
+
+# SWE-bench Pro bundle (committed 2026-05-27 UTC)
+# Repository: internetarchive/openlibrary (53 instances)
 
 # tar.gz form (deterministic git archive of HEAD)
 sha256  22b00cb55922ad0a708c35119b5848e62ce5f354444d59f29fae6f2363139709  swarm-benchmark-results-c5c7b78147fe.tar.gz
@@ -7,14 +11,25 @@ sha256  22b00cb55922ad0a708c35119b5848e62ce5f354444d59f29fae6f2363139709  swarm-
 # zip form (deterministic git archive of HEAD)
 sha256  60cfc3d96ec7a644fedf2674730303e0d8cef63a8650e063cd04dfdeb34ece01  swarm-benchmark-results-c5c7b78147fe.zip
 
-# Underlying source tree commit (would resolve in the released repo)
+# Underlying source tree commit
 git-commit  c5c7b78147fe53c016f1eefade809fa39851e748
 
 # How to verify when the bundle is released:
 #   sha256sum swarm-benchmark-results-c5c7b78147fe.tar.gz
-# OR
-#   sha256sum swarm-benchmark-results-c5c7b78147fe.zip
-#
-# The git-commit value above will resolve to the published repo's HEAD
-# at release time, allowing a third confirmation path:
-#   git -C swarm-benchmark-results rev-parse HEAD
+
+---
+
+# SWE-bench Verified bundle — scikit-learn (committed 2026-06-30 UTC)
+# Repository: scikit-learn/scikit-learn (32/32 instances, 100% coverage)
+# Graded with Princeton SWE-bench official harness
+
+# tar.gz form (deterministic archive, --sort=name --mtime='2026-06-30 00:00:00' --owner=0 --group=0)
+sha256  774aea19c2164c3d50054cd6730ab2472934f6835dc979f91cd6a6794cbdd4ed  sklearn-swe-bench-verified-public.tar.gz
+
+# How to verify when the bundle is released:
+#   sha256sum sklearn-swe-bench-verified-public.tar.gz
+# The hash must match exactly. The bundle contains:
+#   scikit-learn__scikit-learn-<N>/patch.diff
+#   cikit-learn__scikit-learn-<N>/verdict.json
+#   scikit-learn__scikit-learn-<N>/meta.json
+# for all 32 resolved scikit-learn instances in SWE-bench Verified.
